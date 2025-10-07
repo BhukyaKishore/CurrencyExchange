@@ -1,0 +1,24 @@
+{
+    "codes":{
+        "codes":"USD,EUR,JPY,GBP,AUD,NZD,CAD,CHF,CNY,CNH,HKD,SGD,INR,KRW,TWD,THB,IDR,MYR,PHP,VND,BRL,MXN,CLP,COP,ARS,RUB,ZAR,TRY,AED,SAR,QAR,KWD,BHD,OMR,ILS"
+    },
+    "urls":{
+        "historical":"https://api.currencylayer.com/timeframe?access_key=d175ce1f52350bfdc5d95afbf408c6b4&currencies=USD,EUR,JPY,GBP,AUD,NZD,CAD,CHF,CNY,CNH,HKD,SGD,INR,KRW,TWD,THB,IDR,MYR,PHP,VND,BRL,MXN,CLP,COP,ARS,RUB,ZAR,TRY,AED,SAR,QAR,KWD,BHD,OMR,ILS&start_date=2025-03-01&end_date=2025-10-06",
+        "live":"https://api.currencylayer.com/live?access_key=d175ce1f52350bfdc5d95afbf408c6b4&currencies=USD,EUR,JPY,GBP,AUD,NZD,CAD,CHF,CNY,CNH,HKD,SGD,INR,KRW,TWD,THB,IDR,MYR,PHP,VND,BRL,MXN,CLP,COP,ARS,RUB,ZAR,TRY,AED,SAR,QAR,KWD,BHD,OMR,ILS"
+    },
+    "database":{
+        "host":"localhost",
+        "user":"root",
+        "password":"@BBkishore3921"
+    },
+    "dist":{
+        "json":"./dist/json/",
+        "csv":"./dist/csv/",
+        "error":"./dist/error/",
+        "log":"./dist/log/"  
+    },
+    "path":{
+        "tosave":"/Users/kishore/Documents/CurrencyExchang-ELT/dist/",
+        "hist":"./dist/historical/"
+    }
+}

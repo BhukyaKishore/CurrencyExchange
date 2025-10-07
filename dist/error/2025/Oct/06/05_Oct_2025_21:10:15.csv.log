@@ -1,0 +1,404 @@
+
+ 
+Project:    Currency Exchange (ELT) 
+Author :    Bhavani Kishore
+Created_on: Mon, 06 Oct 2025 11:19:02
+VERSION     :1.0
+------------------------------------------------------------------------------------------------------------
+                Boolean value  Error in file 05_Oct_2025_21:10:15.csv on time Mon, 06 Oct 2025 11:19:02 -> success                                    NaN
+terms          https://currencylayer.com/terms
+privacy      https://currencylayer.com/privacy
+timestamp                         1759678806.0
+source                                     USD
+quotes                                1.718656
+Name: USDNZD, dtype: object
+
+
+
+
+------------------------------------------------------------------------------------------------------------
+
+Boolean value  Error in file 05_Oct_2025_21:10:15.csv on time Mon, 06 Oct 2025 11:19:02 -> success                                    NaN
+terms                       https://.com/terms
+privacy      https://currencylayer.com/privacy
+timestamp                           175.967881
+source                                     USD
+quotes                                 1.39655
+Name: USDCAD, dtype: object
+
+
+
+
+------------------------------------------------------------------------------------------------------------
+
+Boolean value  Error in file 05_Oct_2025_21:10:15.csv on time Mon, 06 Oct 2025 11:19:02 -> success                                    NaN
+terms          https://currencylayer.com/terms
+privacy      https://currencylayer.com/privacy
+timestamp                         1759678806.0
+source                                     USD
+quotes                                0.790154
+Name: USDCHF, dtype: object
+
+
+
+
+------------------------------------------------------------------------------------------------------------
+
+Boolean value  Error in file 05_Oct_2025_21:10:15.csv on time Mon, 06 Oct 2025 11:19:02 -> success                                  False
+terms          https://currencylayer.com/terms
+privacy      https://currencylayer.com/privacy
+timestamp                         1759678806.0
+source                                     USD
+quotes                                7.119504
+Name: USDCNY, dtype: object
+
+
+
+
+------------------------------------------------------------------------------------------------------------
+
+Boolean value  Error in file 05_Oct_2025_21:10:15.csv on time Mon, 06 Oct 2025 11:19:02 -> success                                  False
+terms          https://currencylayer.com/terms
+privacy      https://currencylayer.com/privacy
+timestamp                         1759678806.0
+source                                     USD
+quotes                                 7.13601
+Name: USDCNH, dtype: object
+
+
+
+
+------------------------------------------------------------------------------------------------------------
+
+Boolean value  Error in file 05_Oct_2025_21:10:15.csv on time Mon, 06 Oct 2025 11:19:02 -> success                                    NaN
+terms          https://currencylayer.com/terms
+privacy      https://currencylayer.com/privacy
+timestamp                         1759678806.0
+source                                     USD
+quotes                                    0.01
+Name: USDSGD, dtype: object
+
+
+
+
+------------------------------------------------------------------------------------------------------------
+
+Boolean value  Error in file 05_Oct_2025_21:10:15.csv on time Mon, 06 Oct 2025 11:19:02 -> success                                    NaN
+terms          https://currencylayer.com/terms
+privacy      https://currencylayer.com/privacy
+timestamp                         1759678806.0
+source                                     USD
+quotes                             1423.999489
+Name: USDARS, dtype: object
+
+
+
+
+------------------------------------------------------------------------------------------------------------
+
+Terms url Error in file 05_Oct_2025_21:10:15.csv on time Mon, 06 Oct 2025 11:19:02 -> success                                   True
+terms                                      NaN
+privacy      https://currencylayer.com/privacy
+timestamp                         1759678806.0
+source                                     USD
+quotes                                     NaN
+Name: USDHKD, dtype: object
+------------------------------------------------------------------------------------------------------------
+
+Terms url Error in file 05_Oct_2025_21:10:15.csv on time Mon, 06 Oct 2025 11:19:02 -> success                                   True
+terms                                        h
+privacy      https://currencylayer.com/privacy
+timestamp                                  NaN
+source                                     USD
+quotes                               32.335038
+Name: USDTHB, dtype: object
+------------------------------------------------------------------------------------------------------------
+
+Privacy value  Error in file 05_Oct_2025_21:10:15.csv on time Mon, 06 Oct 2025 11:19:02 -> success                                 True
+terms        https://currencylayer.com/terms
+privacy                                  NaN
+timestamp                               10.0
+source                                   USD
+quotes                               16565.3
+Name: USDIDR, dtype: object
+------------------------------------------------------------------------------------------------------------
+
+Privacy value  Error in file 05_Oct_2025_21:10:15.csv on time Mon, 06 Oct 2025 11:19:02 -> success                                 True
+terms        https://currencylayer.com/terms
+privacy      htt://currencylayer.com/privacy
+timestamp                       1759678806.0
+source                                   NaN
+quotes                             57.903704
+Name: USDPHP, dtype: object
+------------------------------------------------------------------------------------------------------------
+
+Privacy value  Error in file 05_Oct_2025_21:10:15.csv on time Mon, 06 Oct 2025 11:19:02 -> success                                 True
+terms        https://currencylayer.com/terms
+privacy      htt://currencylayer.com/privacy
+timestamp                       1759678806.0
+source                                   USD
+quotes                             18.398704
+Name: USDMXN, dtype: object
+------------------------------------------------------------------------------------------------------------
+
+Privacy value  Error in file 05_Oct_2025_21:10:15.csv on time Mon, 06 Oct 2025 11:19:02 -> success                                  True
+terms         https://currencylayer.com/terms
+privacy      https:/currencylayer.com/privacy
+timestamp                        1759678806.0
+source                                    USb
+quotes                              41.417504
+Name: USDTRY, dtype: object
+------------------------------------------------------------------------------------------------------------
+
+Privacy value  Error in file 05_Oct_2025_21:10:15.csv on time Mon, 06 Oct 2025 11:19:02 -> success                                 True
+terms        https://currencylayer.com/terms
+privacy                                  NaN
+timestamp                       1759678806.0
+source                                   USD
+quotes                              3.672504
+Name: USDAED, dtype: object
+------------------------------------------------------------------------------------------------------------
+
+ Timestamp Error in file 05_Oct_2025_21:10:15.csv on time Mon, 06 Oct 2025 11:19:02 -> success                                   True
+terms          https://currencylayer.com/terms
+privacy      https://currencylayer.com/privacy
+timestamp                         1759678806.0
+source                                     USD
+quotes                                0.851704
+Name: USDEUR, dtype: object
+------------------------------------------------------------------------------------------------------------
+
+ Timestamp Error in file 05_Oct_2025_21:10:15.csv on time Mon, 06 Oct 2025 11:19:02 -> success                                   True
+terms          https://currencylayer.com/terms
+privacy      https://currencylayer.com/privacy
+timestamp                         1759678806.0
+source                                     USD
+quotes                               147.44504
+Name: USDJPY, dtype: object
+------------------------------------------------------------------------------------------------------------
+
+ Timestamp Error in file 05_Oct_2025_21:10:15.csv on time Mon, 06 Oct 2025 11:19:02 -> success                                   True
+terms          https://currencylayer.com/terms
+privacy      https://currencylayer.com/privacy
+timestamp                         1759678806.0
+source                                     USD
+quotes                                0.736947
+Name: USDGBP, dtype: object
+------------------------------------------------------------------------------------------------------------
+
+ Timestamp Error in file 05_Oct_2025_21:10:15.csv on time Mon, 06 Oct 2025 11:19:02 -> success                                   True
+terms          https://currencylayer.com/terms
+privacy      https://currencylayer.com/privacy
+timestamp                         1759678806.0
+source                                     USD
+quotes                                1.514704
+Name: USDAUD, dtype: object
+------------------------------------------------------------------------------------------------------------
+
+ Timestamp Error in file 05_Oct_2025_21:10:15.csv on time Mon, 06 Oct 2025 11:19:02 -> success                                   True
+terms          https://currencylayer.com/terms
+privacy      https://currencylayer.com/privacy
+timestamp                         1759678806.0
+source                                     USD
+quotes                                     NaN
+Name: USDHKD, dtype: object
+------------------------------------------------------------------------------------------------------------
+
+ Timestamp Error in file 05_Oct_2025_21:10:15.csv on time Mon, 06 Oct 2025 11:19:02 -> success                                   True
+terms          https://currencylayer.com/terms
+privacy      https://currencylayer.com/privacy
+timestamp                         1759678806.0
+source                                     USD
+quotes                               88.735304
+Name: USDINR, dtype: object
+------------------------------------------------------------------------------------------------------------
+
+ Timestamp Error in file 05_Oct_2025_21:10:15.csv on time Mon, 06 Oct 2025 11:19:02 -> success                                   True
+terms          https://currencylayer.com/terms
+privacy      https://currencylayer.com/privacy
+timestamp                         1759678806.0
+source                                     USD
+quotes                                       0
+Name: USDKRW, dtype: object
+------------------------------------------------------------------------------------------------------------
+
+ Timestamp Error in file 05_Oct_2025_21:10:15.csv on time Mon, 06 Oct 2025 11:19:02 -> success                                   True
+terms           http://currencylayer.com/terms
+privacy      https://currencylayer.com/privacy
+timestamp                         1759678806.0
+source                                     USD
+quotes                                30.44235
+Name: USDTWD, dtype: object
+------------------------------------------------------------------------------------------------------------
+
+ Timestamp Error in file 05_Oct_2025_21:10:15.csv on time Mon, 06 Oct 2025 11:19:02 -> success                                   True
+terms          https://currencylayer.com/terms
+privacy      https://currencylayer.com/privacy
+timestamp                                  NaN
+source                                     USD
+quotes                               32.335038
+Name: USDTHB, dtype: object
+------------------------------------------------------------------------------------------------------------
+
+ Timestamp Error in file 05_Oct_2025_21:10:15.csv on time Mon, 06 Oct 2025 11:19:02 -> success                                   True
+terms          https://currencylayer.com/terms
+privacy      https://currencylayer.com/privacy
+timestamp                                 10.0
+source                                     USD
+quotes                                 16565.3
+Name: USDIDR, dtype: object
+------------------------------------------------------------------------------------------------------------
+
+ Timestamp Error in file 05_Oct_2025_21:10:15.csv on time Mon, 06 Oct 2025 11:19:02 -> success                                   True
+terms          https://currencylayer.com/terms
+privacy      https://currencylayer.com/privacy
+timestamp                         1759678806.0
+source                                     NaN
+quotes                                       0
+Name: USDMYR, dtype: object
+------------------------------------------------------------------------------------------------------------
+
+ Timestamp Error in file 05_Oct_2025_21:10:15.csv on time Mon, 06 Oct 2025 11:19:02 -> success                                   True
+terms          https://currencylayer.com/terms
+privacy      https://currencylayer.com/privacy
+timestamp                         1759678806.0
+source                                     NaN
+quotes                               57.903704
+Name: USDPHP, dtype: object
+------------------------------------------------------------------------------------------------------------
+
+ Timestamp Error in file 05_Oct_2025_21:10:15.csv on time Mon, 06 Oct 2025 11:19:02 -> success                                   True
+terms          https://currencylayer.com/terms
+privacy      https://currencylayer.com/privacy
+timestamp                         1759678806.0
+source                                     UsD
+quotes                                       k
+Name: USDVND, dtype: object
+------------------------------------------------------------------------------------------------------------
+
+ Timestamp Error in file 05_Oct_2025_21:10:15.csv on time Mon, 06 Oct 2025 11:19:02 -> success                                   True
+terms                https://currencylayer.com
+privacy      https://currencylayer.com/privacy
+timestamp                         1759678806.0
+source                                     USD
+quotes                                5.338504
+Name: USDBRL, dtype: object
+------------------------------------------------------------------------------------------------------------
+
+ Timestamp Error in file 05_Oct_2025_21:10:15.csv on time Mon, 06 Oct 2025 11:19:02 -> success                                   True
+terms          https://currencylayer.com/terms
+privacy      https://currencylayer.com/privacy
+timestamp                         1759678806.0
+source                                     USD
+quotes                               18.398704
+Name: USDMXN, dtype: object
+------------------------------------------------------------------------------------------------------------
+
+ Timestamp Error in file 05_Oct_2025_21:10:15.csv on time Mon, 06 Oct 2025 11:19:02 -> success                                   True
+terms                        https://com/terms
+privacy      https://currencylayer.com/privacy
+timestamp                         1759678806.0
+source                                     USD
+quotes                              959.260679
+Name: USDCLP, dtype: object
+------------------------------------------------------------------------------------------------------------
+
+ Timestamp Error in file 05_Oct_2025_21:10:15.csv on time Mon, 06 Oct 2025 11:19:02 -> success                                   True
+terms          https://currencylayer.com/terms
+privacy      https://currencylayer.com/privacy
+timestamp                         1759678806.0
+source                                     USD
+quotes                             3884.161663
+Name: USDCOP, dtype: object
+------------------------------------------------------------------------------------------------------------
+
+ Timestamp Error in file 05_Oct_2025_21:10:15.csv on time Mon, 06 Oct 2025 11:19:02 -> success                                   True
+terms          https://currencylayer.com/terms
+privacy      https://currencylayer.com/privacy
+timestamp                         1759678806.0
+source                                     USD
+quotes                               82.219667
+Name: USDRUB, dtype: object
+------------------------------------------------------------------------------------------------------------
+
+ Timestamp Error in file 05_Oct_2025_21:10:15.csv on time Mon, 06 Oct 2025 11:19:02 -> success                                   True
+terms          https://currencylayer.com/terms
+privacy      https://currencylayer.com/privacy
+timestamp                         1759678806.0
+source                                     USD
+quotes                                17.22816
+Name: USDZAR, dtype: object
+------------------------------------------------------------------------------------------------------------
+
+ Timestamp Error in file 05_Oct_2025_21:10:15.csv on time Mon, 06 Oct 2025 11:19:02 -> success                                   True
+terms          https://currencylayer.com/terms
+privacy      https://currencylayer.com/privacy
+timestamp                         1759678806.0
+source                                     USb
+quotes                               41.417504
+Name: USDTRY, dtype: object
+------------------------------------------------------------------------------------------------------------
+
+ Timestamp Error in file 05_Oct_2025_21:10:15.csv on time Mon, 06 Oct 2025 11:19:02 -> success                                   True
+terms          https://currencylayer.com/terms
+privacy      https://currencylayer.com/privacy
+timestamp                         1759678806.0
+source                                     USD
+quotes                                3.672504
+Name: USDAED, dtype: object
+------------------------------------------------------------------------------------------------------------
+
+ Timestamp Error in file 05_Oct_2025_21:10:15.csv on time Mon, 06 Oct 2025 11:19:02 -> success                                   True
+terms          https://currencylayer.com/terms
+privacy      https://currencylayer.com/privacy
+timestamp                         1759678806.0
+source                                     USD
+quotes                                3.747177
+Name: USDSAR, dtype: object
+------------------------------------------------------------------------------------------------------------
+
+ Timestamp Error in file 05_Oct_2025_21:10:15.csv on time Mon, 06 Oct 2025 11:19:02 -> success                                   True
+terms          https://currencylayer.com/terms
+privacy      https://currencylayer.com/privacy
+timestamp                         1759678806.0
+source                                     USD
+quotes                                3.643712
+Name: USDQAR, dtype: object
+------------------------------------------------------------------------------------------------------------
+
+ Timestamp Error in file 05_Oct_2025_21:10:15.csv on time Mon, 06 Oct 2025 11:19:02 -> success                                   True
+terms          https://currencylayer.com/terms
+privacy      https://currencylayer.com/privacy
+timestamp                         1759678806.0
+source                                     USD
+quotes                                 0.30586
+Name: USDKWD, dtype: object
+------------------------------------------------------------------------------------------------------------
+
+ Timestamp Error in file 05_Oct_2025_21:10:15.csv on time Mon, 06 Oct 2025 11:19:02 -> success                                   True
+terms          https://currencylayer.com/terms
+privacy      https://currencylayer.com/privacy
+timestamp                         1759678806.0
+source                                     USD
+quotes                                  0.3769
+Name: USDBHD, dtype: object
+------------------------------------------------------------------------------------------------------------
+
+ Timestamp Error in file 05_Oct_2025_21:10:15.csv on time Mon, 06 Oct 2025 11:19:02 -> success                                   True
+terms          https://currencylayer.com/terms
+privacy      https://currencylayer.com/privacy
+timestamp                         1759678806.0
+source                                     USD
+quotes                                0.384336
+Name: USDOMR, dtype: object
+------------------------------------------------------------------------------------------------------------
+
+ Timestamp Error in file 05_Oct_2025_21:10:15.csv on time Mon, 06 Oct 2025 11:19:02 -> success                                   True
+terms          https://currencylayer.com/terms
+privacy      https://currencylayer.com/privacy
+timestamp                         1759678806.0
+source                                     USD
+quotes                                3.305604
+Name: USDILS, dtype: object
+------------------------------------------------------------------------------------------------------------
+

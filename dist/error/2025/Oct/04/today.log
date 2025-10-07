@@ -1,0 +1,55 @@
+Error in file today on time Sat, 04 Oct 2025 19:38:29 -> Unnamed: 0                               USDJPY
+success                                    True
+terms           https://currencylayer.com/terms
+privacy       https://currencylayer.com/privacy
+timestamp                            1759579028
+source                                      USD
+quotes                                      NaN
+Name: 1, dtype: object
+
+
+
+Error in file today on time Sat, 04 Oct 2025 19:38:29 -> Unnamed: 0                               USDGBP
+success                                    True
+terms           https://currencylayer.com/terms
+privacy       https://currencylayer.com/privacy
+timestamp                            1759579028
+source                                      USD
+quotes                                      0.0
+Name: 2, dtype: object
+
+
+
+Error in file today on time Sat, 04 Oct 2025 19:38:29 -> Unnamed: 0                               USDAUD
+success                                    True
+terms           https://currencylayer.com/terms
+privacy       https://currencylayer.com/privacy
+timestamp                            1759579028
+source                                      USD
+quotes                                      NaN
+Name: 3, dtype: object
+
+
+
+Error in file today on time Sat, 04 Oct 2025 19:38:29 -> Unnamed: 0                               USDKRW
+success                                    True
+terms           https://currencylayer.com/terms
+privacy       https://currencylayer.com/privacy
+timestamp                            1759579028
+source                                      USD
+quotes                                      0.0
+Name: 12, dtype: object
+
+
+
+Error in file today on time Sat, 04 Oct 2025 19:38:29 -> Unnamed: 0                               USDBRL
+success                                    True
+terms           https://currencylayer.com/terms
+privacy       https://currencylayer.com/privacy
+timestamp                            1759579028
+source                                      USD
+quotes                                      0.0
+Name: 19, dtype: object
+
+
+
