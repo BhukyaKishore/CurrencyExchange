@@ -275,21 +275,45 @@ def rate_check_and_update(df: pd.DataFrame, col: str, file_name: str) -> pd.Data
     df.loc[~is_valid, col] = np.nan
     return df
 
-# df=pd.read_csv("./dist/csv/2025/Oct/05/05_Oct_2025_21:10:15.csv",index_col=[0])
-# df=rate_check_and_update(df,"quotes","05_Oct_2025_21:10:15")
-# df.to_csv('tocheck.csv',index=False)
+def code_check(df:pd.DataFrame,file_name:str):
+    org_idx=['USDEUR', 'USDJPY', 'USDGBP', 'USDAUD', 'USDNZD', 'USDCAD', 'USDCHF', 'USDCNY', 'USDCNH', 'USDHKD', 'USDSGD', 'USDINR', 'USDKRW', 'USDTWD', 'USDTHB', 'USDIDR', 'USDMYR', 'USDPHP', 'USDVND', 'USDBRL', 'USDMXN', 'USDCLP', 'USDCOP', 'USDARS', 'USDRUB', 'USDZAR', 'USDTRY', 'USDAED', 'USDSAR', 'USDQAR', 'USDKWD', 'USDBHD', 'USDOMR', 'USDILS']
+    # df.drop(np.nan, inplace=True)
+    idx=df.index.to_list()
+    invalid=[]
+    for id in idx:
+        if id not in org_idx:
+            df.drop(id, inplace=True)
+    log_dir = config["dist"]["log"] + f'{time.strftime("%Y")}/{time.strftime("%b")}/{time.strftime("%d")}'
+    error_dir = config["dist"]["error"] + f'{time.strftime("%Y")}/{time.strftime("%b")}/{time.strftime("%d")}'
+    os.makedirs(log_dir, exist_ok=True)
+    os.makedirs(error_dir, exist_ok=True)
+    for id in invalid:
+        with open(f"{log_dir}/{file_name}.log", "a") as fs:
+            timestamp = time.strftime("%a, %d %b %Y %H:%M:%S")
+            fs.write(f'''At {timestamp} time -> invalid index(CODE) at code  {id} in file {file_name}
+    ------------------------------------------------------------------------------------------------------------
+    ''')
+        # Error file
+        with open(f"{error_dir}/{file_name}.log", "a") as fs:
+            timestamp = time.strftime("%a, %d %b %Y %H:%M:%S")
+            fs.write(f'''At {timestamp} time -> invalid index(CODE) at code  {id} in file {file_name}
+    ------------------------------------------------------------------------------------------------------------
+    ''')
+    return df
+
 
 # Null check for quotes from Csv File
 try:
     def applying_dq_rules_live(df: pd.DataFrame,file_name :str) :
         '''check all dq rules for the live data'''
         creating_log_and_error_file(file_name)
-        df=bool_check_and_drop(df,"success",file_name)
-        df=terms_url_check(df,"terms",file_name)
-        df=privacy_url_check(df,"privacy",file_name)
-        df=timestamp_check_and_drop(df,"timestamp",file_name)
-        df=source_check_and_drop(df,"source",file_name)
-        df=rate_check_and_update(df,"quotes",file_name)
+        df=code_check(df,file_name)
+        # df=bool_check_and_drop(df,"success",file_name)
+        # df=terms_url_check(df,"terms",file_name)
+        # df=privacy_url_check(df,"privacy",file_name)
+        # df=timestamp_check_and_drop(df,"timestamp",file_name)
+        # df=source_check_and_drop(df,"source",file_name)
+        # df=rate_check_and_update(df,"quotes",file_name)
         df.to_csv('tocheck.csv',index=False)
         return df
 except Exception as err:

@@ -43,7 +43,7 @@ def db_connect():
 # Function to To create database Dynamically
 def create_table(df :pd.DataFrame,table_name :str):
     db_connect()
-    stm="(dt TIMESTAMP UNIQUE,id INT AUTO_INCREMENT PRIMARY KEY,"
+    stm="(dt TIMESTAMP UNIQUE,"
     for column in df.columns:
        stm+=f"{column} FLOAT,"
        # Adding Who Columns To Database
@@ -64,9 +64,12 @@ def create_table(df :pd.DataFrame,table_name :str):
 # Function to To insert Hisorical Data into database Dynamically
 def insert_hist_data(df :pd.DataFrame,table_name:str):
   db_connect()
-  stm=f"insert ignore into {table_name}  (dt ,"
+  cols=[]
+  s=''
+  stm=f"insert into {table_name}  (dt ,"
   for column in df.columns:
-     stm+=f"{column},"
+    stm+=f"{column},"
+    cols.append(column)
   stm=stm[:-1]+") values "
   inser_cmd=""
   for index, row in df.iterrows():
@@ -74,10 +77,16 @@ def insert_hist_data(df :pd.DataFrame,table_name:str):
     for column in df.columns:
       inser_cmd+=f"{row[column]},"
     inser_cmd=inser_cmd[:-1]+"),\n"
-  inser_cmd=inser_cmd[:-2]+";"
+  inser_cmd=inser_cmd[:-2]+" ON DUPLICATE KEY UPDATE "
+  for i in range(len(cols)):
+    s+=f" {cols[i]}=values({cols[i]}) ,"
+  s=s[:-2]
   mycursor,mydb=db_connect()
-  mycursor.execute(stm+inser_cmd)
+  mycursor.execute(stm+inser_cmd+s+";")
+  # print(stm+inser_cmd+s+";")
   mydb.commit()
+  # with open('cmd.txt','w') as fs:
+  #   fs.write(stm+inser_cmd+s+";")
 
 
 
@@ -85,22 +94,27 @@ def insert_hist_data(df :pd.DataFrame,table_name:str):
 
 def insert_live_data(df :pd.DataFrame,table_name:str):
   db_connect()
+  k=[]
+  s=""
   date=pd.to_datetime(df.loc[["USDSAR"],'timestamp']+19800,unit='s')["USDSAR"]
   cols=f"(dt ,"
   values=f'("{date} ",'
   for index,row in df.iterrows():
+    k.append(index)
     cols+=f"{index} ,"
     values+=f"{row["quotes"]} ,"
   cols=cols[:-1]+") "
-  values=values[:-1]+");"
-  stm=f"INSERT IGNORE INTO {table_name} {cols} values {values}"
+  values=values[:-1]+") ON DUPLICATE KEY UPDATE "
+  for i in range(len(k)):
+    s+=f" {k[i]}=values({k[i]}) ,"
+  s=s[:-2]
+  stm=f"INSERT IGNORE INTO {table_name} {cols} values {values} {s} ;"
+  stm=stm.replace('nan',"NULL")
+  # print(stm)
   mycursor,mydb=db_connect()
   mycursor.execute(stm)
   mydb.commit()
-  
 
-df=pd.read_csv('tocheck.csv')
-insert_live_data(df,"data")
 
 
 
