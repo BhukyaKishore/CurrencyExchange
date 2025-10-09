@@ -15,7 +15,7 @@ import time
 import datetime
 
 #Featching Config files
-with open("config.json",'r') as fs:
+with open("./config/config.json",'r') as fs:
     config=json.load(fs)
 
 #Declearing Global Variables
@@ -41,8 +41,14 @@ def db_connect():
 
 
 # Function to To create database Dynamically
-def create_table(df :pd.DataFrame,table_name :str):
+def create_table(table_name :str):
     db_connect()
+    with open(config["path"]['hist']+"hist.json",'r') as fs:
+        data=json.load(fs)
+    data_df=data["quotes"] #dict
+    df=pd.DataFrame.from_dict(data_df,orient='index')
+    df.reset_index(names="date") #DataFrame
+    df.to_csv('tocheck.csv',index=[0])
     stm="(dt TIMESTAMP UNIQUE,"
     for column in df.columns:
        stm+=f"{column} FLOAT,"
@@ -96,7 +102,7 @@ def insert_live_data(df :pd.DataFrame,table_name:str):
   db_connect()
   k=[]
   s=""
-  date=pd.to_datetime(df.loc[["USDSAR"],'timestamp']+19800,unit='s')["USDSAR"]
+  date = pd.to_datetime(int(df['timestamp'].mode().iloc[0]) + 19800, unit='s')
   cols=f"(dt ,"
   values=f'("{date} ",'
   for index,row in df.iterrows():

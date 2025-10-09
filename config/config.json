@@ -1,0 +1,31 @@
+{
+    "codes":{
+        "codes":["USD","EUR","JPY","GBP","AUD","NZD","CAD","CHF","CNY","CNH","HKD","SGD","INR","KRW","TWD","THB","IDR","MYR","PHP","VND","BRL","MXN","CLP","COP","ARS","RUB","ZAR","TRY","AED","SAR","QAR","KWD","BHD","OMR","ILS"]    
+    },
+    "urls":{
+        "access_key":"api-key",
+        "start_date":"2025-04-01",
+        "end_date":"2025-10-08"
+    },
+    "database":{
+        "host":"localhost",
+        "user":"root",
+        "password":"password"
+    },
+    "dist":{
+        "json":"./dist/json/",
+        "csv":"./dist/csv/",
+        "error":"./dist/error/",
+        "log":"./dist/log/"  
+    },
+    "path":{
+        "tosave":"/Users/kishore/Documents/CurrencyExchang-ELT/dist/",
+        "hist":"./dist/historical/"
+    },
+    "torun":{
+        "featch_live":"",
+        "featch_hist":"",
+        "load_live":"1",
+        "load_hist":"1"
+    }
+}

@@ -18,7 +18,7 @@ import datetime
 
 
 #Reading Config.json  File
-with open("config.json","r") as fs:
+with open("./config/config.json","r") as fs:
     config=json.load(fs)
 def creating_log_and_error_file(file_name:str):
     os.makedirs(config["dist"]["log"]+f'{str(time.strftime("%Y"))}/{str(time.strftime("%b"))}/{str(time.strftime("%d"))}', exist_ok=True)
